@@ -1,0 +1,15 @@
+arr=list(map(float,input().split()))
+dep=list(map(float,input().split()))
+arr.sort
+dep.sort()
+platform=1
+i,j=0,1
+n=len(arr)
+while i<n and j<n:
+        if i<=j:
+            platform+=1
+            i+=1
+        else:
+            platform-=1
+            j+=1
+print(platform)
