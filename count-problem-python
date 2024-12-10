@@ -1,0 +1,11 @@
+import collections
+arr=list(map(int,input().split()))
+list1=[]
+list2=[]
+for num in arr:
+    if num!=0:
+        list1.append(num)
+    else:
+        list2.append(num)
+        list3=list1+list2
+print(list3.count(0))
